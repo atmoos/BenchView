@@ -1,0 +1,66 @@
+{
+  "Name": "TestBenchmark",
+  "Count": 2,
+  "Namespace": "GlassView.Benchmark",
+  "Timestamp": "2024-03-27T19:37:06+01:00",
+  "Duration": "00:00:17.9755077",
+  "Environment": {
+    "OsVersion": "Arch Linux",
+    "Dotnet": {
+      "HasRyuJit": true,
+      "BuildConfig": "RELEASE",
+      "DotNetVersion": "8.0.103",
+      "HasAttachedDebugger": false
+    },
+    "Processor": {
+      "Count": 4,
+      "Architecture": "X64",
+      "HardwareIntrinsics": "ToDo!",
+      "PhysicalCoreCount": 4,
+      "LogicalCoreCount": 8,
+      "Name": "Intel(R) Core(TM) i7-8565U CPU @ 1.80GHz"
+    }
+  },
+  "BenchmarkCases": [
+    {
+      "IsBaseline": false,
+      "Categories": [
+        "OtherCat"
+      ],
+      "Statistics": {
+        "Mean": 19434.94442967006,
+        "Median": 19432.0311126709,
+        "StandardError": 49.486094956316634,
+        "StandardDeviation": 130.92790061014156,
+        "SampleSize": 7
+      },
+      "Allocation": {
+        "Gen0Collections": 25,
+        "Gen1Collections": 0,
+        "Gen2Collections": 0,
+        "AllocatedBytes": 64968
+      },
+      "Name": "SumDoubles"
+    },
+    {
+      "IsBaseline": true,
+      "Categories": [
+        "SomeCat"
+      ],
+      "Statistics": {
+        "Mean": 10238.76375906808,
+        "Median": 10228.724884033203,
+        "StandardError": 27.300216280086513,
+        "StandardDeviation": 72.22958301538577,
+        "SampleSize": 7
+      },
+      "Allocation": {
+        "Gen0Collections": 25,
+        "Gen1Collections": 0,
+        "Gen2Collections": 0,
+        "AllocatedBytes": 32584
+      },
+      "Name": "SumIntegers"
+    }
+  ]
+}
